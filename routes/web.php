@@ -116,3 +116,6 @@ Route::get('/admin/users', function ($id) {
 
 Route::get('/user', ['App\\Http\\Controllers\\UserController', 'show']);
 Route::get('/ally', [UserController::class, 'all']);
+
+Route::get('/user/{name}', [UserController::class, 'username']);
+Route::get('/user/{surname}/{name}', [UserController::class, 'surnameUser']);
