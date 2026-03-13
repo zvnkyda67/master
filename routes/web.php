@@ -119,3 +119,7 @@ Route::get('/ally', [UserController::class, 'all']);
 
 Route::get('/user/{name}', [UserController::class, 'username']);
 Route::get('/user/{surname}/{name}', [UserController::class, 'surnameUser']);
+
+Route::get('/userCity/{user}', [UserController::class, 'userCity']);
+
+Route::get('/fafa', [UserController::class, 'showtest']);
