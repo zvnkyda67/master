@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PostController;
 
 
 /*
@@ -123,3 +124,5 @@ Route::get('/user/{surname}/{name}', [UserController::class, 'surnameUser']);
 Route::get('/userCity/{user}', [UserController::class, 'userCity']);
 
 Route::get('/fafa', [UserController::class, 'showtest']);
+
+Route::get('/showblade', [PostController::class, 'show']);

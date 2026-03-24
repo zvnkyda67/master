@@ -1,3 +1,14 @@
 <?php
+namespace App\Http\Controllers;
 
-namespace 
+	class PostController extends Controller
+	{
+		public function show()
+		{
+			return view('post.show', [
+                'title'=>'site.com',
+                'text'=>'page content',
+            ]);
+		}
+	}
+?>
