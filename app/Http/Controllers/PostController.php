@@ -10,5 +10,14 @@ namespace App\Http\Controllers;
                 'text'=>'page content',
             ]);
 		}
+
+		public function showUser() 
+		{
+			return view('users.show', [
+				'title'=>'myspace',
+				'name'=>'Ivan',
+				'surname'=>'Ivanov'
+			]);
+		}
 	}
 ?>

@@ -126,3 +126,10 @@ Route::get('/userCity/{user}', [UserController::class, 'userCity']);
 Route::get('/fafa', [UserController::class, 'showtest']);
 
 Route::get('/showblade', [PostController::class, 'show']);
+
+Route::get('/showuser', [PostController::class, 'showUser']);
+
+
+Route::get('/showmeuser', [UserController::class, 'show']);
+Route::get('/showmeuser1', [UserController::class, 'show1']);
+Route::get('/showmeuser2', [UserController::class, 'show2']);
