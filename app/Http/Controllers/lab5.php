@@ -19,7 +19,14 @@ class lab5 extends Controller{
             'arr'=>['name'=>'Sawa', 'age'=>'21','salary'=>'200000'],
             'arr2'=>[1,2,3,4,5],
             'city'=>'',
-            'location'=>['country'=>'', 'city1'=>'']
+            'location'=>['country'=>'', 'city1'=>''],
+            'year'=>'',
+            'month'=>'04',
+            'day'=>'07',
+            'str'=>'<b>text</b>',
+            'age1'=>'18',
+            'isVzrosli'=>false,
+            'numbers'=>[1,2,3],
         ]);
     }
 
