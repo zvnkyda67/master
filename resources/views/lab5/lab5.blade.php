@@ -38,7 +38,60 @@
     @endif
     <ul>
     @foreach ($numbers as $elem)
-    <li>{{$elem}}</li>
+    <li>{{$elem}} Квадрат числа = {{ $elem*$elem }}</li>
     @endforeach
     </ul>
+    <ul>
+        @foreach ($stroki as $key => $elem)
+        <li>{{ $key + 1}} {{ $elem }}</li>
+        @endforeach
+    </ul>
+    <ul>
+        @foreach ($num as $elem)
+        @if ($elem % 2 == 0)
+        <li>{{ $elem }}</li>
+        @endif
+        @endforeach
+    </ul>
+    @if (is_array($data))
+    <ul>
+        @foreach ($data as $elem)
+        <li>{{ $elem }}</li>
+        @endforeach
+    </ul>
+    @else
+    <p>{{ $data }}</p>
+    @endif
+    <ul>
+        @foreach ($users as $user)
+        <li>{{ $user['name'] }}-{{ $user['age'] }}</li>
+        @endforeach
+    </ul>
+    <table border="1">
+        @foreach ($users as $user)
+        <tr>
+            <td>{{ $user['name'] }}</td>
+            <td>{{ $user['age'] }}</td>
+        </tr>
+        @endforeach
+    </table>
+    <ul>
+        @foreach ($employees as $worker)
+        <li>{{ $worker['name'] }} {{ $worker['surname'] }} salary = {{ $worker['salary'] }}</li>
+        @endforeach
+    </ul>
+    <table border="1">
+        @foreach ($employees as $worker)
+        <tr>
+            <td>{{ $worker['name'] }}</td>
+            <td>{{ $worker['surname'] }}</td>
+            <td>{{ $worker['salary'] }}</td>
+        </tr>
+        @endforeach
+    </table>
+    @forelse ($mas as $elem)
+    <p>{{ $elem }}</p>
+    @empty
+    <P>В массиве нет юзеров</P>
+    @endforelse
 </x-layout>

@@ -27,6 +27,28 @@ class lab5 extends Controller{
             'age1'=>'18',
             'isVzrosli'=>false,
             'numbers'=>[1,2,3],
+            'stroki'=>['one', 'two', 'three'],
+            'num'=>[1,2,3,4,5,6],
+            'data'=>[1,2,3],
+            'users'=>[['name'=>'user', 'age'=>21], ['name'=>'user2', 'age'=>22]],
+            'employees'=>[
+            [
+                'name'=>'user1',
+                'surname'=>'surname1',
+                'salary'=>1000,
+            ],
+            [
+                'name'=>'user2',
+                'surname'=>'surname2',
+                'salary'=>2000,
+            ],
+            [
+                'name'=>'user3',
+                'surname'=>'surname3',
+                'salary'=>3000,
+            ],
+            ],
+            'mas'=>['dawa','sawa','mawa'],
         ]);
     }
 
