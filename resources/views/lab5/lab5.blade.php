@@ -94,4 +94,33 @@
     @empty
     <P>В массиве нет юзеров</P>
     @endforelse
+    <ul>
+    @foreach ($stroki2 as $elem)
+    <li class="first">{{ $loop->iteration }} {{ $elem }}</li>
+    @endforeach
+    </ul>
+    @foreach ($intMas as $elem)
+        @if ($loop->iteration > $loop->count - 3)
+        <i>{{ $elem }}</i>
+        @else
+        <b>{{ $elem }}</b>
+        @endif
+    @endforeach
+    @foreach ($mas1 as $elem)
+    @if ($elem == 0)
+    @break
+    @endif
+    <p>{{ $elem }}</p>
+    @endforeach
+    <ul>
+        @foreach ($mas1 as $elem)
+        @if ($elem == 0)
+        @continue
+        @endif
+        <li>{{ $elem }}</li>
+        @endforeach
+    </ul>
+    @for ($i = 1;$i < 11;$i++)
+    <p>{{ $i }}</p>
+    @endfor
 </x-layout>

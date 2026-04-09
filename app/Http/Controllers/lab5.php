@@ -49,6 +49,9 @@ class lab5 extends Controller{
             ],
             ],
             'mas'=>['dawa','sawa','mawa'],
+            'stroki2'=>['str','str1','str2'],
+            'intMas'=>[1,2,3,4,5,6],
+            'mas1'=>[1,2,3,4,5,0,6,4,2],
         ]);
     }
 
