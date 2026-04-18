@@ -26,12 +26,12 @@ class DatabaseSeeder extends Seeder
         ]);
  */
         DB::table('users1')->insert([
-            'name'=>'Ivan3',
-            'email'=>'ivan3@gmail.com',
-            'age'=>23,
-            'salary'=>3500,
+            'name'=>'Ivan5',
+            'email'=>'ivan5@gmail.com',
+            'age'=>35,
+            'salary'=>5500,
             'create_at'=>'2026-04-11',
-            'update_at'=>'2026-04-11T12:15',
+            'update_at'=>'2026-04-11T12:35',
         ]);
     }
 }

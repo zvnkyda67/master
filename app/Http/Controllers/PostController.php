@@ -11,6 +11,16 @@ use Illuminate\Support\Facades\DB;
 			$user3 = DB::table('users1')->select('name','email')->get();
 			$user4 = DB::table('users1')->select('email as user_email')->get();
 			$user5 = DB::table('users1')->where('age','=', 22)->get();
+			$user6 = DB::table('users1')->where('age','!=', 22)->get();
+			$user7 = DB::table('users1')->where('age','>', 22)->get();
+			$user8 = DB::table('users1')->where('age','<', 22)->get();
+			$user9 = DB::table('users1')->where('age','<=', 22)->get();
+			$user9 = DB::table('users1')->whereBetween('age',[20,23])->get();
+			$user10 = DB::table('users1')->where('id','>',4)->orWhere('age','=',30)->get();
+			$user11 = DB::table('users1')->whereAgeOrSalary(30,500)->orWhere('id','>',4)->get();
+			$user12 = DB::table('users1')->where('salary','=',50)->orWhereBetween('age',[20,30])->get();
+			$user13 = DB::table('users1')->whereBetween('salary',[400,2500])->orWhereBetween('age',[20,30])->get();
+			$user14 = DB::table('users1')->where('id','=', 3)->get();
 
 			$users1 = DB::table('users1')->get();
 
@@ -26,6 +36,15 @@ use Illuminate\Support\Facades\DB;
 				'user3'=>$user3,
 				'user4'=>$user4,
 				'user5'=>$user5,
+				'user6'=>$user6,
+				'user7'=>$user7,
+				'user8'=>$user8,
+				'user9'=>$user9,
+				'user10'=>$user10,
+				'user11'=>$user11,
+				'user12'=>$user12,
+				'user13'=>$user13,
+				'user14'=>$user14,
 			]); 
 			
 		}
