@@ -25,7 +25,27 @@
     <p><b>zadanie 15</b> {{$user11}}</p>
     <p><b>zadanie 16</b> {{$user12}}</p>
     <p><b>zadanie 17</b> {{$user13}}</p>
-    <p><b>zadanie 18</b> {{$user14}}</p>
-    @if (id == 3)
-    <p>{{$}}</p>
+   
+    <p>{{$user14 -> id}}</p>
+    <p>{{$user14 -> age}}</p>
+    <p>{{$user14 -> email}}</p>
+    <p>{{$user15 -> email}}</p>
+    <p><b>zadanie 22</b></p>
+    <ul>
+    @foreach ($user22 as $user)
+    <li>{{$user}}</li>
+    @endforeach
+    </ul>
+    <p><b>zadanie 23</b> {{$user23}}</p>
+    <p><b>zadanie 24</b> {{$user24}}</p>
+    <p><b>zadanie 26</b> {{$user26}}</p>
+    <p><b>zadanie 27</b> {{$user27}}</p>
+    <p><b>zadanie 28</b> {{$user28}}</p>
+    <p><b>zadanie 29</b> {{$user29}}</p>
+    <p><b>zadanie 33</b> {{$user33}}</p>
+    <p><b>zadanie 34</b> {{$user34}}</p>
+    <p><b>zadanie 35</b> {{$user35}}</p>
+    <p><b>zadanie 40</b> {{$user40}}</p>
+    <p><b>zadanie 41</b> {{$user41}}</p>
+    <p><b>zadanie 42</b> {{$user42}}</p>
 </x-layout>
