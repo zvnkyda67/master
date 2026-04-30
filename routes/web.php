@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\lab10Controller;
 use App\Http\Controllers\lab5;
 
 Route::get('/lab5', [lab5::class, 'show']);

@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class lab10 extends Model
 {
-      protected $connection = 'posts';
+      protected $table = 'posts';
 }
