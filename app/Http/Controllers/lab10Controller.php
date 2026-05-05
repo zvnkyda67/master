@@ -11,12 +11,18 @@ class lab10Controller extends Controller
    public function getAll() {
       $table = lab10::all('id', 'title', 'slug');
       $table = DB::table('posts')->select('id', 'title', 'slug')->whereIn('id',[1,2,3,5])->get();
-
+  
       return view('lab10Controller.lab10', [
          'table' => $table,
 
+         ]);
+   }
 
+   public function getOne($id) {
+      $post = lab10::find($id);
 
+      return view('lab10Controller.lab10_2', [
+         'post' => $post,
          ]);
    }
 }

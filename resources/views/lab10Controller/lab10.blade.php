@@ -6,9 +6,9 @@
     <table border="1">
         @foreach ($table as $elem)
         <tr>
-        @foreach ($elem as $key => $elem)     
+        @foreach ($elem as $key => $elem)
         <td>
-            {{$key}}
+            <a href="http://mdsafxa-m1.prof.ru/public/post/all">{{$key}}</a>
         </td>
         <td>{{$elem}}</td>
         @endforeach      
